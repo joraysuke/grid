@@ -14,13 +14,13 @@ body{
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 0.5fr 0.2fr;
     grid-gap:5px ;
     grid-template-areas: 
                     "nav nav nav nav"
                     "aside main main main"
                     "aside content1 content2 content3"
-                    "aside footer footer footer" ;
+                    "footer footer footer footer" ;
 }
 
 nav{
@@ -70,4 +70,19 @@ footer{
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     grid-area: footer;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.menu-items{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 10px;
+
 }
